@@ -8,6 +8,10 @@ public class Earth {
         int aliveNumber = getAroundAliveNumber(input, x, y);
         if(aliveNumber == 3)
             input[x][y] = "*";
+        else if(aliveNumber == 2)
+            input[x][y] = input[x][y];
+        else
+            input[x][y] = " ";
         return input;
     }
 
